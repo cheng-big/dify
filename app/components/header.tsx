@@ -43,11 +43,11 @@ const Header: FC<IHeaderProps> = ({
         : (
           <div className="flex items-center space-x-4">
             <a
-              href="/hot-emotion-guide"
+              href="/hot-emotion-guide.html"
               className="text-sm text-blue-600 hover:underline"
               style={{ fontWeight: 500 }}
             >
-              热门情绪指南
+              Emotion Guide Center
             </a>
           </div>
         )}
