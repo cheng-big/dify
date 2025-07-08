@@ -40,7 +40,17 @@ const Header: FC<IHeaderProps> = ({
           >
             <PencilSquareIcon className="h-4 w-4 text-gray-500" />
           </div>)
-        : <div></div>}
+        : (
+          <div className="flex items-center space-x-4">
+            <a
+              href="/hot-emotion-guide"
+              className="text-sm text-blue-600 hover:underline"
+              style={{ fontWeight: 500 }}
+            >
+              热门情绪指南
+            </a>
+          </div>
+        )}
     </div>
   )
 }
