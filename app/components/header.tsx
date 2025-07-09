@@ -49,8 +49,26 @@ const Header: FC<IHeaderProps> = ({
             >
               Emotion Guide Center
             </a>
+            <a
+              href="/index.html"
+              className="text-sm text-blue-600 hover:underline"
+              style={{ fontWeight: 500 }}
+            >
+              Home
+            </a>
           </div>
         )}
+      {isMobile && (
+        <div className="flex justify-end px-3 pb-2">
+          <a
+            href="/index.html"
+            className="text-sm text-blue-600 hover:underline"
+            style={{ fontWeight: 500 }}
+          >
+            Home
+          </a>
+        </div>
+      )}
     </div>
   )
 }
