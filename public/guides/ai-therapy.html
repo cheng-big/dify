@@ -135,6 +135,22 @@
             <li><a href="/guides/loneliness.html">Loneliness Relief</a></li>
         </ul>
     </nav>
+    <script>
+        // 导航高亮脚本
+        (function () {
+            var links = document.querySelectorAll('.navbar a');
+            var path = location.pathname.replace(/\/index\.html$/, '/');
+            links.forEach(function (link) {
+                var href = link.getAttribute('href');
+                if (href === path || (href === '/' && (path === '/' || path === '')) || (href !== '/' && path.indexOf(href) === 0)) {
+                    link.style.background = '#fff';
+                    link.style.color = '#2b6cb0';
+                    link.style.borderRadius = '6px';
+                    link.style.fontWeight = 'bold';
+                }
+            });
+        })();
+    </script>
     <div class="container">
         <h1>AI Therapy & Counseling Guide</h1>
         <p>AI therapy and counseling are transforming mental health support. With your <strong>AI mental health

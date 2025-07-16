@@ -179,6 +179,22 @@
       <li><a href="/guides/how-to-talk.html">AI Chat Guide</a></li>
       <li><a href="/guides/loneliness.html">Mood Tracking</a></li>
     </ul>
+    <script>
+      // 导航高亮脚本
+      (function () {
+        var links = document.querySelectorAll('.navbar a');
+        var path = location.pathname.replace(/\/index\.html$/, '/');
+        links.forEach(function (link) {
+          var href = link.getAttribute('href');
+          if (href === path || (href === '/' && (path === '/' || path === '')) || (href !== '/' && path.indexOf(href) === 0)) {
+            link.style.background = '#fff';
+            link.style.color = '#2b6cb0';
+            link.style.borderRadius = '6px';
+            link.style.fontWeight = 'bold';
+          }
+        });
+      })();
+    </script>
   </nav>
   <div class="container">
     <h1>Social Anxiety Self-Help Guide</h1>
